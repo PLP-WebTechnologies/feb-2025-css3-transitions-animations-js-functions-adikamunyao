@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  margin: 20px auto;
+  transition: transform 0.5s ease;
+}
+
+/* Add the bounce animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+.animate {
+  animation: bounce 0.6s ease;
+}
